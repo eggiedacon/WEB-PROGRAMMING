@@ -1,0 +1,98 @@
+h2 {
+    padding-bottom: 10px;
+    border-bottom:  2px solid rgb(43, 26, 26);
+}
+
+.box {
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(12, 80, 12);
+    border: 2px solid rgb(69, 69, 219);
+}
+
+.block {
+    display: block;   
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+    width: 100px;
+    height: 80px;
+}
+
+.none {
+    display: none;
+}
+
+.flex-container {
+    display: flex;
+    gap: 10px;
+    background-color: brown;
+    padding: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: tomato;
+    padding: 10px;
+}
+
+.relative {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    background-color: aquamarine;   
+}
+
+
+.absolute-parent {
+    height: 180px;
+    margin-left: 100px;
+}
+
+.absolute-child {
+    position: absolute;
+}
+
+.sticky {
+    position: sticky;
+    top: 100px;
+
+background-color: blanchedalmond;
+color: rgb(1, 11, 19);
+padding: 10px;
+}
+
+.fixed {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+
+
+.z-box1{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    background-color: blueviolet;
+
+}
+
+.z-box2 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 0;
+    background-color: blueviolet;
+
+}
