@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="sticky">
+        Student Portal &nbsp; |&nbsp; Home &nbsp;|&nbsp; About &nbsp; |&nbsp; Contact
+    </div>
+
+    <div class="box">
+        <h1>Student Registration Form</h1>
+
+        <form>
+            <!-- FIRST AND LAST NAME -->
+            <div class="grid-group1">
+                <div>
+                    <label>First Name</label>
+                    <input type="text" name="first_name" required>
+                </div>
+                <div>
+                    <label>Last Name</label>
+                    <input type="text" name="last_name" required>
+                </div>
+            </div>
+
+            <!-- EMAIL AND GENDER -->
+            <div class="grid-group2">
+                <div>
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div class="gender-field">
+                    <label>Gender</label>
+                    <div class="inline-group">
+                        <input type="radio" name="gender"> Male
+                        <input type="radio" name="gender"> Female
+                    </div>
+                </div>
+            </div>
+
+            <!-- BIRTHDATE AND AGE -->
+            <div class="grid-group2">
+                <div>
+                    <label>Birthdate</label>
+                    <input type="date" name="bdate" required>
+                </div>
+                <div>
+                    <label>Age</label>
+                    <input type="number" name="age" required>
+                </div>
+            </div>
+
+            <!-- PASSWORD (separate row) -->
+            <div class="single-field">
+                <label>Password</label>
+                <input type="password" name="password">
+            </div>
+
+            <!-- SKILLS -->
+            <label>Skills</label>
+            <div class="inline-group">
+                <input type="checkbox" name="skill"> Java
+                <input type="checkbox" name="skill"> JavaScript
+                <input type="checkbox" name="skill"> PHP
+            </div>
+
+            <!-- COURSE DROPDOWN -->
+            <label>Course</label>
+            <select name="course">
+                <option value="bsit">BSIT</option>
+                <option value="bscrim">BSCRIM</option>
+                <option value="bsed">BSED</option>
+            </select>
+
+            <!-- ADDRESS -->
+            <label>Address</label>
+            <textarea name="address" rows="4"></textarea>
+
+            <!-- SUBMIT BUTTON -->
+            <div class="single-field">
+                <button type="submit">Register</button>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- FIXED BACK TO TOP BUTTON -->
+    <div class="fixed-btn">
+        Back To Top
+    </div>
+
+</body>
+</html>
