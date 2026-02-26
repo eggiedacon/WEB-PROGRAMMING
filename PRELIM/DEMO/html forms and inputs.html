@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS & INPUTS</title>
+    <style>
+        form#sign-up {
+            background: yellow;
+            width: 500px;
+            height: 200px;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lecture: HTML Forms and Input Types</h1>
+
+    <table>
+        <tr>
+            <th>Topic</th>
+            <th>HTML Code</th>
+            <th>Result</th>
+        </tr>
+        <tr>
+            <td>Text Input</td>
+            <td>
+                <code>&lt;input type="text" name="first_name" id="first_name" placeholder="First Name"&gt;</code>
+            </td>
+            <td>
+                <input type="text" name="first_name" id="first_name" placeholder="First Name">
+            </td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td>
+                <code>&lt;input type="password" name="password" id="password" placeholder="Password"&gt;</code>
+            </td>
+            <td>
+                <input type="password" name="password" id="password" placeholder="Password">
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>
+                <code>&lt;input type="email" name="email_input" id="email_input" placeholder="Email"&gt;</code>
+            </td>
+            <td>
+                <input type="email" name="email_input" id="email_input" placeholder="Email">
+            </td>
+        </tr>
+        <tr>
+            <td>Number</td>
+            <td>
+                <code>&lt;input type="number" name="quantity" id="quantity" placeholder="Quantity"&gt;</code>
+            </td>
+            <td>
+                <input type="number" name="quantity" id="quantity" placeholder="Quantity">
+            </td>
+        </tr>
+        <tr>
+            <td>Date</td>
+            <td>
+                <code>&lt;input type="date" name="bdate" id="bdate"&gt;</code>
+            </td>
+            <td>
+                <input type="date" name="bdate" id="bdate">
+            </td>
+        </tr>
+        <tr>
+            <td>Radio Buttons</td>
+            <td>
+                <code>
+                    &lt;input type="radio" name="gender_radio"&gt; Male
+                    &lt;input type="radio" name="gender_radio"&gt; Female
+                </code>
+            </td>
+            <td>
+                <input type="radio" name="gender_radio"> Male <br>
+                <input type="radio" name="gender_radio"> Female<br>
+            </td>
+        </tr>
+        <tr>
+            <td>Checkboxes</td>
+            <td></td>
+            <td>
+                <input type="checkbox" name="language"> Java <br>
+                <input type="checkbox" name="language"> JavaScript <br>
+                <input type="checkbox" name="language"> PHP
+            </td>
+        </tr>
+        <tr>
+            <td>Select Dropdown</td>
+            <td></td>
+            <td>
+                <select name="course" id="course">
+                    <option value="bsit">BSIT</option>
+                    <option value="bscrim">BSCRIM</option>
+                    <option value="bsed">BSED</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Textarea</td>
+            <td></td>
+            <td>
+                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>Buttons</td>
+            <td></td>
+            <td>
+                <input type="button" value="Click Me!">
+                <input type="submit" value="Submit"><br>
+                <button type="button">Click Me!</button>
+                <button type="submit">Submit!</button>
+            </td>
+        </tr>
+    </table>
+
+    <form id="sign-up">
+        <input type="text" name="first_name_form" id="first_name_form" placeholder="First Name" required="required" value="Jerold"> <br>
+        <input type="text" name="last_name" id="last_name" placeholder="Last Name" required><br>
+        <input type="email" name="email_form" id="email_form" placeholder="Email" required> <br>
+        Gender <br>
+        <input type="radio" name="gender_form" checked="checked" required> Male <br>
+        <input type="radio" name="gender_form" required> Female<br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
